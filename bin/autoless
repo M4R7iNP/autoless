@@ -20,7 +20,8 @@ var srcDir = program.args[0] || process.cwd();
 var dstDir = program.args[1] || srcDir;
 
 var monitorOptions = {
-  interval: program.interval
+  interval: program.interval,
+  ignoreDotFiles: true
 };
 var compileOptions = {
   sourceMap: program.sourceMap
